@@ -16,10 +16,18 @@ export async function getStaticPaths() {
       fallback: 'blocking',
     }
   }
+  /**
+   * use server script to get all items from root
+   */
   const CMS_API = `${process.env.NEXT_PUBLIC_CRAFTERCMS_HOST_NAME}/api/1/services/page.json?path=/site/website&depth=3&crafterSite=${process.env.NEXT_PUBLIC_CRAFTERCMS_SITE_NAME}`;
   console.log("CMS URL >>>>>>>", CMS_API);
   const res = await fetch(CMS_API);
   const data = await res.json();
+  console.log("data >>>>>>>", data);
+  /**
+   * work out all item of content-page: /page/*
+   * remap item url as array and exlcuding "site" & "website"
+  */
   const paths = data.childItems
     ?.filter((item) => item?.dom?.page?.["content-type"]?.indexOf("/page/") !== -1)
     ?.map((item) => {
@@ -32,10 +40,12 @@ export async function getStaticPaths() {
           id: segments,
         }
       }
-    })
+    });
+
   // const paths = [
   //   { params: { id: ['test'] } }
   // ];
+
   return {
     paths,
     fallback: true,
