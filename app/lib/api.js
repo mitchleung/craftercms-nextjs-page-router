@@ -17,6 +17,7 @@ export async function getModel(path = "/site/website/index.xml") {
 }
 
 export async function getModelByUrl(webUrl = '/') {
+  console.log("webUrl", webUrl);
   return await firstValueFrom(
     urlTransform('renderUrlToStoreUrl', webUrl).pipe(
       switchMap((path) => getDescriptor(path, { flatten: true }).pipe(
@@ -27,7 +28,25 @@ export async function getModelByUrl(webUrl = '/') {
 }
 
 export async function getInitialProps(context) {
-  const model = await getModelByUrl(context.pathname);
+  const composedPath = context.params?.id?.join('/') ?? context.pathname;
+  // const composedPath = context.asPath;
+  // console.log(context.params?.id?.join('/'))
+  console.log(composedPath);
+  const model = await getModelByUrl(composedPath);
+  return { model };
+}
+
+export async function getModelById(id) {
+  // const composedPath = context.asPath;
+  // console.log(context.params?.id?.join('/'))
+  let composedPath;
+  if (id instanceof Array) {
+    composedPath = id.join('/');
+  } else {
+    composedPath = id ?? '/';
+  }
+  console.log("composedPath", composedPath);
+  const model = await getModelByUrl(composedPath);
   return { model };
 }
 

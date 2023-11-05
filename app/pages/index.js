@@ -9,8 +9,23 @@ import {
 } from '@craftercms/experience-builder/react';
 import Footer from '../components/Footer';
 
+export async function getStaticProps(context) {
+  const { model } = await getInitialProps(context);
+  console.log("MODEL >>>>>>>", model);
+  return {
+    props: {
+      model,
+    },
+    revalidate: 10 * 60 * 10, // In seconds
+  }
+}
+
 export default function Index({ model }) {
+  console.log(">>>>>>> MODEL >>>>>>>", model);
   const { isAuthoring } = useCrafterAppContext();
+  if (!model) {
+    return <div>No model found</div>
+  }
   return (
     <ExperienceBuilder model={model} isAuthoring={isAuthoring}>
       <RenderField
@@ -34,4 +49,4 @@ export default function Index({ model }) {
   );
 }
 
-Index.getInitialProps = getInitialProps;
+// Index.getInitialProps = getInitialProps;

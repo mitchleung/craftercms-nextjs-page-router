@@ -1,0 +1,287 @@
+
+{
+  "item": {
+    "item": {
+      "name": "website",
+      "url": "/site/website",
+      "descriptorUrl": "/site/website.meta.xml",
+      "descriptorDom": null,
+      "properties": null,
+      "children": [],
+      "folder": true
+    },
+    "childItems": [
+      {
+        "item": {},
+        "childItems": [],
+        "properties": null,
+        "folder": false,
+        "storeUrl": "/site/website/index.xml",
+        "storeName": "index.xml",
+        "dom": {
+          "page": {
+            "content-type": "/page/page",
+            "display-template": "/templates/web/welcome.ftl",
+            "merge-strategy": "inherit-levels",
+            "objectGroupId": "8d7f",
+            "objectId": "8d7f21fa-5e09-00aa-8340-853b7db302da",
+            "file-name": "index.xml",
+            "folder-name": {
+              "crafter-source": "/site/website/crafter-level-descriptor.level.xml",
+              "crafter-source-content-type-id": "/component/level-descriptor"
+            },
+            "createdDate": "2017-1-31T16:18:14.000Z",
+            "createdDate_dt": "2017-1-31T16:18:14.000Z",
+            "lastModifiedDate": "2022-01-27T07:30:32.301Z",
+            "lastModifiedDate_dt": "2023-04-04T16:41:26.488Z",
+            "no-template-required": "true",
+            "placeInNav": "false",
+            "navLabel": "Home",
+            "internal-name": "Home",
+            "orderDefault_f": "-1",
+            "content_o": {
+              "item": [
+                {
+                  "key": "/site/components/00743ad0-96de-e579-1949-61aa407ade20.xml",
+                  "value": "Hero",
+                  "include": "/site/components/00743ad0-96de-e579-1949-61aa407ade20.xml",
+                  "disableFlattening": "false"
+                },
+                {
+                  "key": "/site/components/readme.xml",
+                  "value": "Readme",
+                  "include": "/site/components/readme.xml",
+                  "disableFlattening": "false"
+                }
+              ]
+            },
+            "title_s": "Welcome to NextJS on CrafterCMS"
+          }
+        }
+      },
+      {
+        "item": {
+          "name": "test",
+          "url": "/site/website/test",
+          "descriptorUrl": "/site/website/test.meta.xml",
+          "descriptorDom": null,
+          "properties": null,
+          "children": [
+            {
+              "name": "index.xml",
+              "url": "/site/website/test/index.xml",
+              "descriptorUrl": "/site/website/test/index.xml",
+              "descriptorDom": {
+                "page": {
+                  "content-type": "/page/page",
+                  "display-template": "/templates/web/welcome.ftl",
+                  "merge-strategy": "inherit-levels",
+                  "objectGroupId": "b2f0",
+                  "objectId": "b2f0d776-48ca-f1f1-c999-777484c94a5c",
+                  "file-name": "index.xml",
+                  "folder-name": "test",
+                  "createdDate": "2023-11-02T06:00:06.406Z",
+                  "createdDate_dt": "2023-11-02T06:00:06.406Z",
+                  "lastModifiedDate": "2023-11-02T06:00:06.406Z",
+                  "lastModifiedDate_dt": "2023-11-02T07:40:58.037Z",
+                  "no-template-required": "false",
+                  "placeInNav": "true",
+                  "orderDefault_f": "2000",
+                  "internal-name": "Test Section",
+                  "navLabel": "Test Section",
+                  "title_s": "Dynamic Page",
+                  "content_o": {}
+                }
+              },
+              "properties": null,
+              "folder": false
+            }
+          ],
+          "folder": true
+        },
+        "childItems": [
+          {
+            "item": {
+              "name": "index.xml",
+              "url": "/site/website/test/index.xml",
+              "descriptorUrl": "/site/website/test/index.xml",
+              "descriptorDom": {
+                "page": {
+                  "content-type": "/page/page",
+                  "display-template": "/templates/web/welcome.ftl",
+                  "merge-strategy": "inherit-levels",
+                  "objectGroupId": "b2f0",
+                  "objectId": "b2f0d776-48ca-f1f1-c999-777484c94a5c",
+                  "file-name": "index.xml",
+                  "folder-name": "test",
+                  "createdDate": "2023-11-02T06:00:06.406Z",
+                  "createdDate_dt": "2023-11-02T06:00:06.406Z",
+                  "lastModifiedDate": "2023-11-02T06:00:06.406Z",
+                  "lastModifiedDate_dt": "2023-11-02T07:40:58.037Z",
+                  "no-template-required": "false",
+                  "placeInNav": "true",
+                  "orderDefault_f": "2000",
+                  "internal-name": "Test Section",
+                  "navLabel": "Test Section",
+                  "title_s": "Dynamic Page",
+                  "content_o": {}
+                }
+              },
+              "properties": null,
+              "folder": false
+            },
+            "childItems": [],
+            "properties": null,
+            "folder": false,
+            "storeUrl": "/site/website/test/index.xml",
+            "storeName": "index.xml",
+            "dom": {
+              "page": {
+                "content-type": "/page/page",
+                "display-template": "/templates/web/welcome.ftl",
+                "merge-strategy": "inherit-levels",
+                "objectGroupId": "b2f0",
+                "objectId": "b2f0d776-48ca-f1f1-c999-777484c94a5c",
+                "file-name": "index.xml",
+                "folder-name": "test",
+                "createdDate": "2023-11-02T06:00:06.406Z",
+                "createdDate_dt": "2023-11-02T06:00:06.406Z",
+                "lastModifiedDate": "2023-11-02T06:00:06.406Z",
+                "lastModifiedDate_dt": "2023-11-02T07:40:58.037Z",
+                "no-template-required": "false",
+                "placeInNav": "true",
+                "orderDefault_f": "2000",
+                "internal-name": "Test Section",
+                "navLabel": "Test Section",
+                "title_s": "Dynamic Page",
+                "content_o": {}
+              }
+            }
+          }
+        ],
+        "properties": null,
+        "folder": true,
+        "storeUrl": "/site/website/test",
+        "storeName": "test",
+        "dom": null
+      },
+      {
+        "item": {
+          "name": "about",
+          "url": "/site/website/about",
+          "descriptorUrl": "/site/website/about.meta.xml",
+          "descriptorDom": null,
+          "properties": null,
+          "children": [
+            {
+              "name": "index.xml",
+              "url": "/site/website/about/index.xml",
+              "descriptorUrl": "/site/website/about/index.xml",
+              "descriptorDom": {
+                "page": {
+                  "content-type": "/page/about",
+                  "display-template": {
+                    "crafter-source": "/site/website/crafter-level-descriptor.level.xml",
+                    "crafter-source-content-type-id": "/component/level-descriptor"
+                  },
+                  "merge-strategy": "inherit-levels",
+                  "objectGroupId": "f250",
+                  "objectId": "f2502f10-30a3-4308-6a8c-e79356219b00",
+                  "file-name": "index.xml",
+                  "folder-name": "about",
+                  "createdDate": "2022-01-25T10:29:08.868Z",
+                  "createdDate_dt": "2022-01-25T10:29:08.868Z",
+                  "lastModifiedDate": "2022-01-26T13:28:42.885Z",
+                  "lastModifiedDate_dt": "2022-01-27T07:52:02.106Z",
+                  "no-template-required": "true",
+                  "internal-name": "About",
+                  "navLabel": "About Us",
+                  "placeInNav": "true",
+                  "orderDefault_f": "3000",
+                  "title_s": "About Us"
+                }
+              },
+              "properties": null,
+              "folder": false
+            }
+          ],
+          "folder": true
+        },
+        "childItems": [
+          {
+            "item": {
+              "name": "index.xml",
+              "url": "/site/website/about/index.xml",
+              "descriptorUrl": "/site/website/about/index.xml",
+              "descriptorDom": {
+                "page": {
+                  "content-type": "/page/about",
+                  "display-template": {
+                    "crafter-source": "/site/website/crafter-level-descriptor.level.xml",
+                    "crafter-source-content-type-id": "/component/level-descriptor"
+                  },
+                  "merge-strategy": "inherit-levels",
+                  "objectGroupId": "f250",
+                  "objectId": "f2502f10-30a3-4308-6a8c-e79356219b00",
+                  "file-name": "index.xml",
+                  "folder-name": "about",
+                  "createdDate": "2022-01-25T10:29:08.868Z",
+                  "createdDate_dt": "2022-01-25T10:29:08.868Z",
+                  "lastModifiedDate": "2022-01-26T13:28:42.885Z",
+                  "lastModifiedDate_dt": "2022-01-27T07:52:02.106Z",
+                  "no-template-required": "true",
+                  "internal-name": "About",
+                  "navLabel": "About Us",
+                  "placeInNav": "true",
+                  "orderDefault_f": "3000",
+                  "title_s": "About Us"
+                }
+              },
+              "properties": null,
+              "folder": false
+            },
+            "childItems": [],
+            "properties": null,
+            "folder": false,
+            "storeUrl": "/site/website/about/index.xml",
+            "storeName": "index.xml",
+            "dom": {
+              "page": {
+                "content-type": "/page/about",
+                "display-template": {
+                  "crafter-source": "/site/website/crafter-level-descriptor.level.xml",
+                  "crafter-source-content-type-id": "/component/level-descriptor"
+                },
+                "merge-strategy": "inherit-levels",
+                "objectGroupId": "f250",
+                "objectId": "f2502f10-30a3-4308-6a8c-e79356219b00",
+                "file-name": "index.xml",
+                "folder-name": "about",
+                "createdDate": "2022-01-25T10:29:08.868Z",
+                "createdDate_dt": "2022-01-25T10:29:08.868Z",
+                "lastModifiedDate": "2022-01-26T13:28:42.885Z",
+                "lastModifiedDate_dt": "2022-01-27T07:52:02.106Z",
+                "no-template-required": "true",
+                "internal-name": "About",
+                "navLabel": "About Us",
+                "placeInNav": "true",
+                "orderDefault_f": "3000",
+                "title_s": "About Us"
+              }
+            }
+          }
+        ],
+        "properties": null,
+        "folder": true,
+        "storeUrl": "/site/website/about",
+        "storeName": "about",
+        "dom": null
+      }
+    ],
+    "properties": null,
+    "folder": true,
+    "storeUrl": "/site/website",
+    "storeName": "website",
+    "dom": null
+  }
+}
