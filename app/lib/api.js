@@ -66,3 +66,30 @@ export async function getNav() {
     )
   );
 }
+
+
+export async function loadPages() {
+  // Call an external API endpoint to get posts
+  const CMS_API = `${process.env.NEXT_PUBLIC_CRAFTERCMS_HOST_NAME}/api/1/services/page.json?path=/site/website&depth=3&crafterSite=${process.env.NEXT_PUBLIC_CRAFTERCMS_SITE_NAME}`;
+
+  console.log("CMS URL >>>>>>>", CMS_API);
+  const res = await fetch(CMS_API);
+  console.log("res status", res.status);
+  const data = await res.json();
+  console.log("data >>>>>>>", data);
+
+  const paths = data.childItems
+    ?.filter((item) => item?.dom?.page?.["content-type"]?.indexOf("/page/") !== -1)
+    ?.map((item) => {
+      const segments = item.url
+        ?.split('/')
+        ?.filter((segment) => segment !== "site" && segment !== "website");
+      console.log("segments >>>>>>>", segments);
+      return {
+        params: {
+          id: segments,
+        }
+      }
+    });
+  return paths;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { getInitialProps } from '../lib/api';
+import { getInitialProps, loadPages } from '../lib/api';
 import { contentTypeMap, useCrafterAppContext } from './_app';
 import Typography from '@mui/material/Typography';
 import {
@@ -16,39 +16,12 @@ export async function getStaticPaths() {
       fallback: 'blocking',
     }
   }
-  /**
-   * use server script to get all items from root
-   */
-  const CMS_API = `${process.env.NEXT_PUBLIC_CRAFTERCMS_HOST_NAME}/api/1/services/page.json?path=/site/website&depth=3&crafterSite=${process.env.NEXT_PUBLIC_CRAFTERCMS_SITE_NAME}`;
-  console.log("CMS URL >>>>>>>", CMS_API);
-  const res = await fetch(CMS_API);
-  const data = await res.json();
-  console.log("data >>>>>>>", data);
-  /**
-   * work out all item of content-page: /page/*
-   * remap item url as array and exlcuding "site" & "website"
-  */
-  const paths = data.childItems
-    ?.filter((item) => item?.dom?.page?.["content-type"]?.indexOf("/page/") !== -1)
-    ?.map((item) => {
-      const segments = item.url
-        ?.split('/')
-        ?.filter((segment) => segment !== "site" && segment !== "website");
-      console.log("segments >>>>>>>", segments);
-      return {
-        params: {
-          id: segments,
-        }
-      }
-    });
-
-  // const paths = [
-  //   { params: { id: ['test'] } }
-  // ];
+  const paths = await loadPages();
 
   return {
     paths,
-    fallback: true,
+    fallback: true, 
+    // fallback: 'blocking',
   }
 }
 
@@ -77,7 +50,9 @@ export default function WildCardPage({ model }) {
   }
   return (
     <>
-      {JSON.stringify(model)}
+      <pre>
+        {JSON.stringify(model)}
+      </pre>
       <ExperienceBuilder model={model} isAuthoring={isAuthoring}>
         <div>
           {JSON.stringify(model)}
