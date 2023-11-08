@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page</content-type>
+	<display-template>/templates/web/welcome.ftl</display-template>
+	<no-template-required>false</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>ef70</objectGroupId>
+	<objectId>ef7047cc-916a-dda5-4d68-26daa667dd16</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>test</folder-name>
+	<internal-name>test page</internal-name>
+	<navLabel>Test Page</navLabel>
+	<title_s>Test Title</title_s>
+	<placeInNav>true</placeInNav>
+	<orderDefault_f>3000</orderDefault_f>
+	<content_o item-list="true">	<item>	<key>/site/components/Test-Folder/0cad2a1e-4abb-2baf-ad45-fbbd70872082.xml</key>
+	<value>Test Rich Text 1</value>
+	<include>/site/components/Test-Folder/0cad2a1e-4abb-2baf-ad45-fbbd70872082.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item>	<item>	<key>/site/components/Test-Folder/e880f06a-fd18-5a63-2c3a-9458828b5d3f.xml</key>
+	<value>Test Hero</value>
+	<include>/site/components/Test-Folder/e880f06a-fd18-5a63-2c3a-9458828b5d3f.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item>	<item>	<key>/site/components/Test-Folder/14074180-be3a-cb15-b1d9-02b1e6b2e868.xml</key>
+	<value>Test Rich Text 2</value>
+	<include>/site/components/Test-Folder/14074180-be3a-cb15-b1d9-02b1e6b2e868.xml</include>
+	<disableFlattening>false</disableFlattening>
+	</item></content_o>
+	<createdDate>2023-11-08T07:27:43.104Z</createdDate>
+	<createdDate_dt>2023-11-08T07:27:43.104Z</createdDate_dt>
+	<lastModifiedDate>2023-11-08T07:37:51.862Z</lastModifiedDate>
+	<lastModifiedDate_dt>2023-11-08T07:37:51.862Z</lastModifiedDate_dt>
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/hero</content-type>
+	<display-template/>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>e880</objectGroupId>
+	<objectId>e880f06a-fd18-5a63-2c3a-9458828b5d3f</objectId>
+	<file-name>e880f06a-fd18-5a63-2c3a-9458828b5d3f.xml</file-name>
+	<folder-name/>
+	<internal-name>Test Hero</internal-name>
+	<title_s>Test Hero</title_s>
+	<background_s>/static-assets/images/giacomo-gobbo-quFDynE2YSg-unsplash.jpg</background_s>
+	<createdDate>2023-11-08T07:30:48.323Z</createdDate>
+	<createdDate_dt>2023-11-08T07:30:48.323Z</createdDate_dt>
+	<lastModifiedDate>2023-11-08T07:30:48.323Z</lastModifiedDate>
+	<lastModifiedDate_dt>2023-11-08T07:30:48.323Z</lastModifiedDate_dt>
+</component>

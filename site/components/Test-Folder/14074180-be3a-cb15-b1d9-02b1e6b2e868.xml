@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+	<content-type>/component/rte</content-type>
+	<display-template>/templates/web/components/rte.ftl</display-template>
+	<no-template-required>true</no-template-required>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>1407</objectGroupId>
+	<objectId>14074180-be3a-cb15-b1d9-02b1e6b2e868</objectId>
+	<internal-name>Test Rich Text 2</internal-name>
+	<file-name>14074180-be3a-cb15-b1d9-02b1e6b2e868.xml</file-name>
+	<folder-name/>
+	<content_html>&lt;p&gt;Voluptas tempore iure id dignissimos eum mollitia optio quis minima inventore, vero nobis quas ea exercitationem, rem reprehenderit et velit blanditiis. Nihil cum voluptate quod. Delectus velit voluptatum perspiciatis nesciunt.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam minus quos fugiat.&lt;/li&gt;
+&lt;li&gt;Maxime suscipit odit pariatur adipisci hic voluptas quasi necessitatibus minima incidunt aperiam.&lt;/li&gt;
+&lt;li&gt;Ipsa ab quia voluptatum consectetur saepe ad, voluptates iste maiores harum ipsam.&lt;/li&gt;
+&lt;li&gt;Dicta quaerat similique cum nulla voluptatum voluptatem aliquam corrupti in corporis! Officiis.&lt;/li&gt;
+&lt;li&gt;Nisi ipsam quaerat ad odio accusantium perspiciatis, nihil modi repudiandae sed iure!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus iste nulla accusamus doloremque illum libero repellendus cumque, omnis est facilis.&lt;/li&gt;
+&lt;li&gt;Itaque atque rerum fugit, repellat aperiam quae, quaerat vero voluptas aliquam quos nam ipsum delectus veritatis. Corrupti asperiores rem quis!&lt;/li&gt;
+&lt;li&gt;Consequatur rem quasi pariatur expedita natus reprehenderit, magnam tempora suscipit, nam explicabo necessitatibus, ad provident. Sit illo voluptates assumenda nemo?&lt;/li&gt;
+&lt;li&gt;Aspernatur molestiae tempora, debitis voluptates dolores delectus vel pariatur architecto quam enim? Quidem mollitia earum molestias molestiae est tempore modi.&lt;/li&gt;
+&lt;li&gt;Ad porro nisi ab, laudantium, voluptatum minima sapiente atque blanditiis nam perferendis quas fuga veritatis deserunt esse quam commodi ut?&lt;/li&gt;
+&lt;li&gt;Quod, aliquam tenetur similique asperiores, temporibus praesentium iste saepe inventore blanditiis architecto quasi adipisci ipsum eos hic quia sed officia.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, tempore?&lt;/p&gt;</content_html>
+	<createdDate>2023-11-08T07:37:21.491Z</createdDate>
+	<createdDate_dt>2023-11-08T07:37:21.491Z</createdDate_dt>
+	<lastModifiedDate>2023-11-08T07:37:21.491Z</lastModifiedDate>
+	<lastModifiedDate_dt>2023-11-08T07:37:21.491Z</lastModifiedDate_dt>
+</component>

@@ -15,6 +15,7 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 <siteUi>
+    <widget id="craftercms.components.Preview" initialEditModeOn="true" initialHighlightMode="all" xbDetectionTimeoutMs="5000"/>
     <widget id="craftercms.components.ToolsPanel">
         <configuration>
             <widgets>
@@ -353,7 +354,7 @@
                     <!-- Configuration options: https://www.tiny.cloud/docs/configure/ -->
                     <!-- Plugins: https://www.tiny.cloud/docs/plugins/opensource/ -->
                     <tinymceOptions>
-                    <![CDATA[
+                    
                     {
                         "menubar": true,
                         "theme": "silver",
@@ -381,7 +382,7 @@
                         "content_style": "body {}",
                         "contextmenu": false
                     }
-                    ]]>
+                    
                     </tinymceOptions>
                 </setup>
             </setups>
@@ -637,5 +638,5 @@
             </getSpringBean>
         </reference>
     </references>
-    <version>4.0.6</version>
+    <version>4.1.1</version>
 </siteUi>
