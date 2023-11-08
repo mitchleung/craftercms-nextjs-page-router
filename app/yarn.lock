@@ -136,9 +136,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@craftercms/experience-builder@npm:^4.1.2-1":
-  version: 4.1.2
-  resolution: "@craftercms/experience-builder@npm:4.1.2"
+"@craftercms/experience-builder@npm:4.1.2-1":
+  version: 4.1.2-1
+  resolution: "@craftercms/experience-builder@npm:4.1.2-1"
   dependencies:
     "@craftercms/classes": 4.1.2
     "@craftercms/content": 4.1.2
@@ -165,7 +165,7 @@ __metadata:
     redux: ^4.2.1
     redux-observable: ^2.0.0
     rxjs: ^7.0.0
-  checksum: b8da03ee84c7b0225d20ccd41a9c3c7c2420a42469a537208036e65cbdcaccfc3c2c5f3af6f3d78cd0d4f6182c2ee1d9fc9b830d4b0ec5a0046b7e1c1c12bdfc
+  checksum: a16d4afa94e5f2cf734fe144ff7cc6e36b6b3179dfe0b5ab097c60b168d1a65f11652c40fabe3c622cc9d5788d7e9986b535896e9c48388b838f5488fdf4c9e0
   languageName: node
   linkType: hard
 
@@ -200,7 +200,7 @@ __metadata:
   dependencies:
     "@craftercms/classes": ^4.1.2
     "@craftercms/content": ^4.1.2
-    "@craftercms/experience-builder": ^4.1.2-1
+    "@craftercms/experience-builder": 4.1.2-1
     "@craftercms/models": ^4.1.2-1
     "@emotion/cache": ^11.10.5
     "@emotion/css": ^11.10.6
