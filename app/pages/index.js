@@ -9,8 +9,8 @@ import {
 } from '@craftercms/experience-builder/react';
 import Footer from '../components/Footer';
 
-export async function getStaticProps(context) {
-  const { model } = await getInitialProps(context);
+export async function getStaticProps() {
+  const { model } = await getInitialProps({params: {id: []}});
   console.log("MODEL >>>>>>>", model);
   return {
     props: {
@@ -27,25 +27,30 @@ export default function Index({ model }) {
     return <div>No model found</div>
   }
   return (
-    <ExperienceBuilder model={model} isAuthoring={isAuthoring}>
-      <RenderField
-        model={model}
-        fieldId="title_s"
-        component={Typography}
-        variant="title"
-        componentProps={{
-          // Component props can simply be sent as props to RenderField, and
-          // they would be passed down to Typography, however, because there's
-          // a prop name collision (i.e. `component`) we can use componentProps
-          // to supply the component prop directly to Typography.
-          component: 'h1'
-        }}
-        align="center"
-        sx={{ m: 1 }}
-      />
-      <RenderComponents contentTypeMap={contentTypeMap} model={model} fieldId="content_o" />
-      <Footer />
-    </ExperienceBuilder>
+    <>
+      <div>
+        {JSON.stringify(model)}
+      </div>
+      <ExperienceBuilder model={model} isAuthoring={isAuthoring}>
+        <RenderField
+          model={model}
+          fieldId="title_s"
+          component={Typography}
+          variant="title"
+          componentProps={{
+            // Component props can simply be sent as props to RenderField, and
+            // they would be passed down to Typography, however, because there's
+            // a prop name collision (i.e. `component`) we can use componentProps
+            // to supply the component prop directly to Typography.
+            component: 'h1'
+          }}
+          align="center"
+          sx={{ m: 1 }}
+        />
+        <RenderComponents contentTypeMap={contentTypeMap} model={model} fieldId="content_o" />
+        <Footer />
+      </ExperienceBuilder>
+    </>
   );
 }
 

@@ -17,7 +17,7 @@ export async function getStaticPaths() {
     }
   }
   const paths = await loadPages();
-
+  console.log("PATHS >>>>>>>", paths);
   return {
     paths,
     fallback: true, 
@@ -26,8 +26,9 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
+  console.log("context >>>>>>>", context);
   const { model } = await getInitialProps(context);
-  console.log("MODEL >>>>>>>", model);
+  // console.log("MODEL >>>>>>>", model);
   return {
     props: {
       params: context.params,
